@@ -5,7 +5,7 @@ function x = SL0(y, A, K, L, mu)
     AAt = A * At;
     invAAt = pinv(AAt);
     normLeft = At * invAAt;
-    v = normLeft * y;
+    v = normLeft * y; % l2 minimization solution
     n = length(v);
 
     sigmaInitMult = 2;
